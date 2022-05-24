@@ -1,102 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@100&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Work Sans';
-    font-weight: 100;
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans";
+  font-weight: 100;
 }
 body {
-    min-height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,69,179,1) 49%, rgba(196,0,255,1) 96%);
-  
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(69, 69, 179, 1) 49%, rgba(196, 0, 255, 1) 96%  );
 }
 /*Barra do topo*/
 
 header {
-    padding: 2rem 1rem 2rem 1rem;
-    background: rgba(0, 0, 0, 0.699);
-    color:rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 2rem 1rem 2rem 1rem;
+  background: rgba(0, 0, 0, 0.699);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1{
-    font-size: 3rem;
+header h1 {
+  font-size: 3rem;
 }
 
 /*Seção de alteração*/
 
 main {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color: #fff;
 }
 
 main section#textAndImg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 2rem 0;
 }
 
 main section#textAndImg div#text {
-    padding: 5rem;
-    font-size: 1.5rem;
-    text-align: center;
+  padding: 4    rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 main section#textAndImg div#imagem {
-    padding: 5rem;
+  padding: 4rem;
 }
 
-main section#textAndImg div#imagem #img{
- width: 15rem;
+main section#textAndImg div#imagem #img {
+  width: 15rem;
 }
 
 main button {
-    background: #410572;
-    color:rgb(255, 255, 255);
-    border: 0.8rem solid #410572;
-    border-radius: 1.5rem;
-    font-weight: bold;
-    font-size: 0.8rem;
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
+  background: #410572;
+  color: rgb(255, 255, 255);
+  border: 0.8rem solid #410572;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-main button:hover{
-    transform: scale(1.2);
+main button:hover {
+  transform: scale(1.2);
 }
 
- /*Rodapé da página*/
+/*Rodapé da página*/
 
 footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-footer p{
-    color: #fff;
-    font-size: 0.8rem;
+footer p {
+  color: #fff;
+  font-size: 0.8rem;
 }
 
-footer a{
-    text-decoration: none;
-    font-weight: bold;
-    color: rgba(196,0,255,1);
-    cursor: pointer;
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(196, 0, 255, 1);
+  cursor: pointer;
 }
 
 footer a:hover {
-    color: rgb(14, 175, 224);
+  color: rgb(14, 175, 224);
+}
+
+@media screen and (max-device-width: 360px){
+    main section#textAndImg div#text {
+        padding: 3.5rem;
+    }
+      
+    main section#textAndImg div#imagem {
+        padding: 3.5rem;
+    }
+}
+
+@media screen and (max-device-width: 280px){
+    main section#textAndImg div#text {
+        padding: 1.2rem;
+    }
+      
+    main section#textAndImg div#imagem {
+        padding: 1.2rem;
+    }
 }
